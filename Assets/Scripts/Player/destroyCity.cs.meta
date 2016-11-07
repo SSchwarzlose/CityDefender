@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 1d4a1aebeeb9a284fbad5d36e1f0b886
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - explosion: {fileID: 100000, guid: 82ee57263c3242541ad7ef613c51ef5a, type: 2}
+  - LargeFlame: {fileID: 100000, guid: 7b277829b0b4991f100024a80dbc5c14, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

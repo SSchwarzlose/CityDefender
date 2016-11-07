@@ -1,0 +1,6 @@
+<<<<<<< c1ae1ef479640336614c08d52b4648bfe408913a
+m_EditorVersion: 5.4.2f2
+=======
+m_EditorVersion: 5.1.3f1
+>>>>>>> Working game without 3D-Models
+m_StandardAssetsVersion: 0
