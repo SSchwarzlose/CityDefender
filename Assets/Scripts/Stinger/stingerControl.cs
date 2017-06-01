@@ -13,7 +13,6 @@ public class stingerControl : MonoBehaviour
 	int countDown;
 	public int delay;
 	
-	
 	void Update () 
 	{
 		Targeting();
@@ -24,7 +23,7 @@ public class stingerControl : MonoBehaviour
 		down -= Time.deltaTime;
 		if ( down <= 0)
 		{
-			int Index = Random.Range( 0, LevelManager.Instance.Cities.Length );
+			int Index = Random.Range( 0, LevelManager.Instance.Cities.Length - 1);
 			transform.LookAt(LevelManager.Instance.Cities[Index].transform.position);
 			down = count;
 		}
