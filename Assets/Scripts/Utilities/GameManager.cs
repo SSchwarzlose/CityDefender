@@ -4,6 +4,7 @@ using System.Collections;
 
 public static class GameManager
 {
+	#region private fields
 	private static bool playMusic = true;
 	//Scores
 	private static int overallScore = 0;
@@ -13,7 +14,8 @@ public static class GameManager
 	
 	//Pause Game
 	private static bool isGamePaused = false;
-	
+	#endregion
+	#region Properties
 	public static bool IsGamePaused
 	{
 		get { return isGamePaused; }
@@ -43,23 +45,24 @@ public static class GameManager
 		get { return overallScore; }
 		set { overallScore = value; }
 	}
-	
+	#endregion
+		
 	public static void IncreasePoints(int points)
 	{
 		overallScore += points;
 	}
 	
 	public static void PauseGame()
-    {	
-       Time.timeScale = 0;
-       AudioListener.pause = true;
-       isGamePaused = true;
-    }
+    	{	
+	    Time.timeScale = 0;
+   	    AudioListener.pause = true;
+    	    isGamePaused = true;
+   	}
 
-    public static void UnPauseGame()
-    {
-        Time.timeScale = 1;
-        AudioListener.pause = false;
+   	 public static void UnPauseGame()
+   	 {
+      	  	Time.timeScale = 1;
+      	  	AudioListener.pause = false;
 		isGamePaused = false;
 	}
 	
