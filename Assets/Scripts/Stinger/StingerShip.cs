@@ -9,13 +9,10 @@ public class StingerShip : MonoBehaviour
 	
 	public Rigidbody stinger;
 	public Rigidbody stingerClone;
-	
 
 	// Use this for initialization
 	void Start () 
-	{
-	
-	}
+	{}
 	
 	// Update is called once per frame
 	void Update () 
@@ -30,7 +27,6 @@ public class StingerShip : MonoBehaviour
 				spawnRate = Random.Range(0.8f, 1.3f);
 			}
 		}
-	
 	}
 	
 	void FireStinger()
